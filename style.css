@@ -11,28 +11,31 @@
     box-sizing: border-box;
 }
 
+html {
+    overscroll-behavior-y: none;
+}
+
 body {
     background: var(--primary-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     font-family: 'Kanit', sans-serif;
     color: var(--text-color);
     font-weight: 600;
-    padding: 2rem 1rem;
     gap: 1rem;
 }
 
 h1 {
-    font-size: 4rem;
-    -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color: var(--secondary-color);
+    width: 361px;
+    height: 62px;
+    margin-top: min(67px, 4,18rem);
+    margin-bottom: min(27px, 1.86rem);
 }
 
 p {
     font-size: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: min(60px, 3.75rem);
 }
 
 button {
@@ -43,8 +46,10 @@ button {
     justify-content: center;
     background: var(--accent-color);
     color: var(--text-color);
+    width: min(162px, 10.12rem);
+    height: min(46px, 2.87rem);
     border: none;
-    border-bottom: 4px solid var(--secondary-color);
+    border-bottom: 4px solid rgba(30, 111, 176, 0.5);
     border-radius: 8px;
     padding: 0.4rem 2rem;
     font-size: 1.25rem;
@@ -60,9 +65,8 @@ button:active {
 }
 
 img {
-    display: none;
-    width: 10rem;
-    height: auto;
+    display: none;    
+    margin-bottom: min(40px, 2.5rem);
 }
 
 .shadow {
@@ -88,4 +92,10 @@ div {
 .active {
     animation: rotateCoin 1.5s ease-out;   
     display: block;
+}
+
+h1 img {
+    display: block;
+    width: 361px;
+    height: 62px;
 }
