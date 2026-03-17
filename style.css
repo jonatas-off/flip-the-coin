@@ -20,22 +20,26 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-family: 'Kanit', sans-serif;
     color: var(--text-color);
     font-weight: 600;
-    gap: 1rem;
+    padding: 0 2rem 1rem;
 }
 
 h1 {
+    text-shadow: 2px 2px 0px #35383f;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #35383f;
     width: 361px;
     height: 62px;
-    margin-top: min(67px, 4,18rem);
-    margin-bottom: min(27px, 1.86rem);
+    margin-top: 67px;
+    margin-bottom: 27px;
 }
 
 p {
     font-size: 1.5rem;
-    margin-bottom: min(60px, 3.75rem);
+    margin-bottom: 60px;
 }
 
 button {
@@ -46,13 +50,13 @@ button {
     justify-content: center;
     background: var(--accent-color);
     color: var(--text-color);
-    width: min(162px, 10.12rem);
-    height: min(46px, 2.87rem);
+    width: 162px;
+    height: 46px;
     border: none;
-    border-bottom: 4px solid rgba(30, 111, 176, 0.5);
+    box-shadow: 0px 4px 0px 0px rgba(30, 111, 176, 0.5);
     border-radius: 8px;
-    padding: 0.4rem 2rem;
-    font-size: 1.25rem;
+    padding: 8px 40px;
+    font-size: 20px;
 }
 
 button, img:hover {
@@ -61,12 +65,12 @@ button, img:hover {
 
 button:active {
     transition: 1.5s;
-    border-bottom: none;
+    box-shadow: 0 -16px 0 0 transparent;
 }
 
 img {
     display: none;    
-    margin-bottom: min(40px, 2.5rem);
+    margin-bottom: 40px;
 }
 
 .shadow {
@@ -78,7 +82,6 @@ div {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 1.5rem;
 }
 
 @keyframes rotateCoin {
@@ -92,10 +95,4 @@ div {
 .active {
     animation: rotateCoin 1.5s ease-out;   
     display: block;
-}
-
-h1 img {
-    display: block;
-    width: 361px;
-    height: 62px;
 }
